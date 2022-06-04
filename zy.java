@@ -1,7 +1,11 @@
 public class zy {
     public static void main(String[] arg) {
         int a1[] = {1, 3, 4, 5, 6, 0, 0, 0, 6, 5, 7, 4, 7, 6, 5};
-        int b = l(a1);
+//        int b = l(a1);
+        int b= 0;
+        b=l(a1,b);
+        print(b);
+        //返回对源数进行赋值
         int c=0;
         int a2[]=new int[b];
          js(a1,a2,c);
@@ -20,8 +24,8 @@ public class zy {
         System.out.print(temp[i]+"\t");
         }
     }
-    public static int l(int s[]){
-        int b=0;
+    public static int l(int s[],int b){
+//        int b=0;
         for (int i=0;i<s.length;i++){
             if (s[i]>0){
                 b=b+1;
